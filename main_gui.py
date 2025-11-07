@@ -43,22 +43,22 @@ def show_backround():
 
 
 def get_place_to_rect_dict():
-    place_to_rect_image[(0, 0)] = pygame.image.load('white_rook.png')
-    place_to_rect_image[(0, 1)] = pygame.image.load('white_knight.png')
-    place_to_rect_image[(0, 2)] = pygame.image.load('white_bishop.png')
-    place_to_rect_image[(0, 3)] = pygame.image.load('white_king.png')
-    place_to_rect_image[(0, 4)] = pygame.image.load('white_queen.png')
-    place_to_rect_image[(0, 5)] = pygame.image.load('white_bishop.png')
-    place_to_rect_image[(0, 6)] = pygame.image.load('white_knight.png')
-    place_to_rect_image[(0, 7)] = pygame.image.load('white_rook.png')
-    place_to_rect_image[(7, 0)] = pygame.image.load('black_rook.png')
-    place_to_rect_image[(7, 1)] = pygame.image.load('black_knight.png')
-    place_to_rect_image[(7, 2)] = pygame.image.load('black_bishop.png')
-    place_to_rect_image[(7, 3)] = pygame.image.load('black_king.png')
-    place_to_rect_image[(7, 4)] = pygame.image.load('black_queen.png')
-    place_to_rect_image[(7, 5)] = pygame.image.load('black_bishop.png')
-    place_to_rect_image[(7, 6)] = pygame.image.load('black_knight.png')
-    place_to_rect_image[(7, 7)] = pygame.image.load('black_rook.png')
+    place_to_rect_image[(0, 0)] = pygame.image.load('pictures\white_rook.png')
+    place_to_rect_image[(0, 1)] = pygame.image.load('pictures\white_knight.png')
+    place_to_rect_image[(0, 2)] = pygame.image.load('pictures\white_bishop.png')
+    place_to_rect_image[(0, 3)] = pygame.image.load('pictures\white_king.png')
+    place_to_rect_image[(0, 4)] = pygame.image.load('pictures\white_queen.png')
+    place_to_rect_image[(0, 5)] = pygame.image.load('pictures\white_bishop.png')
+    place_to_rect_image[(0, 6)] = pygame.image.load('pictures\white_knight.png')
+    place_to_rect_image[(0, 7)] = pygame.image.load('pictures\white_rook.png')
+    place_to_rect_image[(7, 0)] = pygame.image.load('pictures\black_rook.png')
+    place_to_rect_image[(7, 1)] = pygame.image.load('pictures\black_knight.png')
+    place_to_rect_image[(7, 2)] = pygame.image.load('pictures\black_bishop.png')
+    place_to_rect_image[(7, 3)] = pygame.image.load('pictures\black_king.png')
+    place_to_rect_image[(7, 4)] = pygame.image.load('pictures\black_queen.png')
+    place_to_rect_image[(7, 5)] = pygame.image.load('pictures\black_bishop.png')
+    place_to_rect_image[(7, 6)] = pygame.image.load('pictures\black_knight.png')
+    place_to_rect_image[(7, 7)] = pygame.image.load('pictures\black_rook.png')
 
 
 def show_first_last_row():
@@ -88,8 +88,8 @@ def show_first_last_row():
 def show_pions():
     cc = 0
     for i in range(8):
-        place_to_rect_image[(i, 1)] = pygame.image.load('white_pion.png')
-        place_to_rect_image[(i, 6)] = pygame.image.load('black_pion.png')
+        place_to_rect_image[(i, 1)] = pygame.image.load('pictures\white_pion.png')
+        place_to_rect_image[(i, 6)] = pygame.image.load('pictures\black_pion.png')
         win.blit(place_to_rect_image[(i, 1)], (10+cc, 45))
         win.blit(place_to_rect_image[(i, 6)], (10+cc, 300))
         cc += 50
@@ -103,18 +103,18 @@ def show_tools():
 
 
 def get_dict_tool_to_image():
-    dict_tool_to_image[(Pion, 'w')] = pygame.image.load('white_pion.png')
-    dict_tool_to_image[(Pion, 'b')] = pygame.image.load('black_pion.png')
-    dict_tool_to_image[(King, 'w')] = pygame.image.load('white_king.png')
-    dict_tool_to_image[(King, 'b')] = pygame.image.load('black_king.png')
-    dict_tool_to_image[(Queen, 'w')] = pygame.image.load('white_queen.png')
-    dict_tool_to_image[(Queen, 'b')] = pygame.image.load('black_queen.png')
-    dict_tool_to_image[(Bishop, 'w')] = pygame.image.load('white_bishop.png')
-    dict_tool_to_image[(Bishop, 'b')] = pygame.image.load('black_bishop.png')
-    dict_tool_to_image[(Knight, 'w')] = pygame.image.load('white_knight.png')
-    dict_tool_to_image[(Knight, 'b')] = pygame.image.load('black_knight.png')
-    dict_tool_to_image[(Rook, 'w')] = pygame.image.load('white_rook.png')
-    dict_tool_to_image[(Rook, 'b')] = pygame.image.load('black_rook.png')
+    dict_tool_to_image[(Pion, 'w')] = pygame.image.load('pictures\white_pion.png')
+    dict_tool_to_image[(Pion, 'b')] = pygame.image.load('pictures\black_pion.png')
+    dict_tool_to_image[(King, 'w')] = pygame.image.load('pictures\white_king.png')
+    dict_tool_to_image[(King, 'b')] = pygame.image.load('pictures\black_king.png')
+    dict_tool_to_image[(Queen, 'w')] = pygame.image.load('pictures\white_queen.png')
+    dict_tool_to_image[(Queen, 'b')] = pygame.image.load('pictures\black_queen.png')
+    dict_tool_to_image[(Bishop, 'w')] = pygame.image.load('pictures\white_bishop.png')
+    dict_tool_to_image[(Bishop, 'b')] = pygame.image.load('pictures\black_bishop.png')
+    dict_tool_to_image[(Knight, 'w')] = pygame.image.load('pictures\white_knight.png')
+    dict_tool_to_image[(Knight, 'b')] = pygame.image.load('pictures\black_knight.png')
+    dict_tool_to_image[(Rook, 'w')] = pygame.image.load('pictures\white_rook.png')
+    dict_tool_to_image[(Rook, 'b')] = pygame.image.load('pictures\black_rook.png')
 
 
 def get_color_squere(place):
