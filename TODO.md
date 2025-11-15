@@ -1,5 +1,5 @@
 # Fixes (for Stable)
-1. GUI for pion upgrade.
+1. GUI for pion upgrade Bug.
 2. Tie max turns
 3. Castle Tests and Bugs
 4. General Tests
